@@ -1,0 +1,52 @@
+body{
+    background-color: #F1F5F9;
+}
+.btn{
+    padding: 10px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 570px;
+}
+.head{
+    text-align: center;
+    color: darkmagenta;
+}
+.head1{
+    color: red;
+} 
+.input{
+    padding:10px;
+
+    /* border: 1px black solid; */
+}
+.input-fields{
+    padding: 20px;
+    background-color: #F1F5F9;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.main{
+     padding: 20px;
+      background-color: #F1F5F9;
+    }
+
+.output-fields{
+    margin-left: 50px;
+    background-color: #F1F5F9;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.e-today{
+    padding: 20px;
+    background-color: #F1F5F9;
+}
+h4{
+    text-align: center;
+}
+.label{
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    padding: 5px;
+}
