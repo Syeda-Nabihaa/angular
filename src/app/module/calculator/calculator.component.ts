@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css'],
 })
 export class CalculatorComponent {
-  monthly: number = 0;
-  CurrentAge: number = 0;
-  retirementAge: number = 0;
-  inflation: number = 0;
+  monthly: number = 50001;
+  CurrentAge: number = 30;
+  retirementAge: number = 40;
+  inflation: number = 10;
   // monthlyExpense:number = 5000;
 
   expenseToday: number = 0
@@ -17,15 +17,25 @@ export class CalculatorComponent {
   leanFire: number = 0;
   fire: number = 0;
   fatFire: number = 0;
+  // yearsUntilRetirement:number=this.retirementAge-this.CurrentAge ;
+
+  
   
   fireCalculator() {
     this.expenseToday = this.monthly * 12;
-   this.expenseAtRetirement =
-      this.monthly *
-      Math.pow(1 + this.inflation / 100, this.retirementAge - this.CurrentAge);
-    this.leanFire = Math.round(this.expenseAtRetirement * 20);
-    this.fire = Math.round(this.expenseAtRetirement * 25);
-    this.fatFire = Math.round(this.fire * 2);
+
+    const yearsUntilRetirement = this.retirementAge - this.CurrentAge;
+    this.expenseAtRetirement =
+      this.expenseToday * Math.pow(1 + this.inflation / 100, yearsUntilRetirement);
+
+
+  //  this.expenseAtRetirement = this.expenseToday * Math.pow(1 + this.inflation / 100, this.yearsUntilRetirement);
+  
+    this.leanFire = Math.floor(this.expenseAtRetirement)*20;
+
+    this.fire = (this.expenseAtRetirement )* 25;
+
+    this.fatFire = Math.floor(this.fire )* 2;
 
   
     
