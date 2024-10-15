@@ -34,8 +34,8 @@ export class CalculatorComponent {
   
     this.leanFire = Math.floor(this.expenseAtRetirement)*20;
 
-    this.fire = (this.expenseAtRetirement )* 25;
+    this.fire = (this.expenseAtRetirement )*25;
 
-    this.fatFire = Math.floor(this.fire )* 2;
+    this.fatFire = Math.floor(this.fire )*2;
   }
 }
