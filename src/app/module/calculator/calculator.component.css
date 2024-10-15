@@ -8,6 +8,11 @@ body{
     margin-bottom: 20px;
     margin-left: 570px;
 }
+.btn:hover{
+    background: transparent;
+    border: 1px solid green;
+    color: black;
+}
 .head{
     text-align: center;
     color: darkmagenta;
@@ -22,22 +27,22 @@ body{
 }
 .input-fields{
     padding: 20px;
-    background-color: #F1F5F9;
+    background-color: #F8F9FA;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .main{
      padding: 20px;
-      background-color: #F1F5F9;
+      background-color: #F8F9FA;
     }
 
 .output-fields{
     margin-left: 50px;
-    background-color: #F1F5F9;
+    background-color: #F8F9FA;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .e-today{
     padding: 20px;
-    background-color: #F1F5F9;
+    background-color: #F8F9FA;
 }
 h4{
     text-align: center;
